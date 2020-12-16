@@ -7,6 +7,7 @@ import Home from "@/views/Home";
 import Profile from "@/views/Profile";
 import Friends from "@/views/Friends";
 import About from "@/views/About";
+import Agenda from "@/views/Agenda"
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,11 @@ const routes = [
     name: 'about',
     component: About
   },
+  {
+    path: '/agenda',
+    name: 'agenda',
+    component: Agenda
+  }
 ]
 
 const router = new VueRouter({

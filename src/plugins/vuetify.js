@@ -4,9 +4,6 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import VueFuse from 'vue-fuse'
-import PrettyCheckbox from 'pretty-checkbox-vue';
-
-Vue.use(PrettyCheckbox);
 
 Vue.use(VueFuse);
 Vue.use(Vuetify, {

@@ -35,7 +35,7 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer app temporary v-model="drawer" color="#FFA07A">
+    <v-navigation-drawer app temporary v-model="drawer" color="#6D9773">
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
@@ -80,6 +80,7 @@ export default {
         {icon: 'mdi-home', text: 'Dashboard', route: '/dashboard'},
         {icon: 'mdi-folder', text: 'My Projects', route: '/projects'},
         {icon: 'groups', text: 'Team', route: '/team'},
+        {icon: 'mdi-calendar', text: 'Agenda & Timeline', route: '/agenda'}
       ],
       links_2: [
         {text: 'Profile', route: '/profile'},
@@ -101,7 +102,7 @@ export default {
     async getTasks() {
       const response = await axios.get('User/GetTasks');
       this.tasks = response.data.slice(0, 10);
-    }
+    },
   },
 
 }
