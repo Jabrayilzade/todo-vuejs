@@ -3,12 +3,17 @@ import VueRouter from 'vue-router'
 import Dashboard from "@/views/Dashboard";
 import Projects from "@/views/Projects";
 import Team from "@/views/Team";
+import Home from "@/views/Home";
+import Profile from "@/views/Profile";
+import Friends from "@/views/Friends";
+import About from "@/views/About";
+import Agenda from "@/views/Agenda"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/dashboard',
     name: 'dashboard',
     component: Dashboard
   },
@@ -21,6 +26,31 @@ const routes = [
     path: '/team',
     name: 'team',
     component: Team
+  },
+  {
+    path: '/',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: Profile
+  },
+  {
+    path: '/friends',
+    name: 'friends',
+    component: Friends
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: About
+  },
+  {
+    path: '/agenda',
+    name: 'agenda',
+    component: Agenda
   }
 ]
 
